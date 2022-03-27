@@ -35,6 +35,9 @@ class QuoteController extends Controller
         $quote->ciudad = $request->ciudad;
 
         $quote->save();
+
+        $sendEmail = new SendEmailController();
+        $sendEmail->sendEmail($quote);
         return response()->json([
             "message" => "cotizacion creada correctamente",
             "success" => true
