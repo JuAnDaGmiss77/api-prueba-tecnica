@@ -12,8 +12,8 @@ class SendEmailController extends Controller
 
     public function sendEmail($datos)
     {
-        Mail::to('jililix728@f1xm.com')
-            ->cc(['steve17gta@gmail.com', 'ewittinge_i738d@tigpe.com'])
+        Mail::to('jaguilar@processoft.com.co')
+            ->cc(['jcastro@processoft.com.co', 'mahernandez@processoft.com.co'])
             ->send(new SendEmailQuote($datos));
     }
 }
