@@ -21,4 +21,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 // route create quote
 Route::post('/quote', [QuoteController::class, 'store']);
-Route::get('/email',[SendEmailController::class,'sendEmail']);

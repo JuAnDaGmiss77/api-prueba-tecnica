@@ -22,7 +22,6 @@ class CreateQuotesTable extends Migration
             $table->string('departamento',100);
             $table->string('ciudad',100);
             $table->timestamps();
-            
         });
     }
 
